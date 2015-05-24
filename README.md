@@ -51,3 +51,11 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+### Implementation log
+
+* [Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)
+  
+  
+    npm install --save-dev ember-cli-sass
+    mv app/styles/app.css app/styles/app.scss
+
