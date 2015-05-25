@@ -53,9 +53,21 @@ Specify what it takes to deploy your app.
 
 ### Implementation log
 
+* Turn on a couple of debug option in `config/environment.js`
+
 * [Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)
   
   
     npm install --save-dev ember-cli-sass
     mv app/styles/app.css app/styles/app.scss
+
+* [Ember-cli-bootstrap-sassy]()
+
+
+    ember install ember-cli-bootstrap-sassy
+    cp bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss app/styles/boostrap-custom.scss
+    
+    Add the following two lines to app/styles/app.scss
+    @import "boostrap-custom";
+    @import "bootstrap";
 
