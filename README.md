@@ -71,3 +71,4 @@ Specify what it takes to deploy your app.
     @import "boostrap-custom";
     @import "bootstrap";
 
+* Add `main-nav` component. Note: a component name has to contain a dash.
