@@ -72,3 +72,5 @@ Specify what it takes to deploy your app.
     @import "bootstrap";
 
 * Add `main-nav` component. Note: a component name has to contain a dash.
+
+* Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo
