@@ -1,3 +1,9 @@
 <h1>Contacts</h1>
 
 {{outlet}}
+
+<ul class="list-group">
+  {{#each model as |item|}}
+      <li class="list-group-item">{{item.name}}</li>
+  {{/each}}
+</ul>

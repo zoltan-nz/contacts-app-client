@@ -76,3 +76,5 @@ Specify what it takes to deploy your app.
 * Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo
 
 * Generate `Contacts` resource: `ember g resource contacts`, add `link-to` to main-nav.hbs, add header to contacts.hbs
+
+* Add a simple array to routes/contacts.js and show this list in template.
