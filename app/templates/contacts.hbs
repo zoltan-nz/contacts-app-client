@@ -1,9 +1,15 @@
 <h1>Contacts</h1>
 
-{{outlet}}
-
 <ul class="list-group">
   {{#each model as |item|}}
-      <li class="list-group-item">{{item.name}}</li>
+      <li class="list-group-item">{{item.name}}
+
+        {{#if isShowingPhoneNumber}}
+          {{item.phone}}
+        {{/if}}
+
+      </li>
   {{/each}}
 </ul>
+
+<button {{action "toggleShowPhoneNumber"}} class="btn btn-default">Show Phone Number</button>

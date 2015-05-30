@@ -78,3 +78,12 @@ Specify what it takes to deploy your app.
 * Generate `Contacts` resource: `ember g resource contacts`, add `link-to` to main-nav.hbs, add header to contacts.hbs
 
 * Add a simple array to routes/contacts.js and show this list in template.
+
+* Add a simple show/hide button to template.
+
+
+    ember g controller contacts
+    Add isShowingPhoneNumber property
+    Add #if block to template
+    Add button to template
+    Add actions to controller
