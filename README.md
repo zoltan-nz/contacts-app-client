@@ -87,3 +87,5 @@ Specify what it takes to deploy your app.
     Add #if block to template
     Add button to template
     Add actions to controller
+
+* Binding class attributes and button label. Using ES6 function property syntax.

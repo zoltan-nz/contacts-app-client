@@ -12,4 +12,6 @@
   {{/each}}
 </ul>
 
-<button {{action "toggleShowPhoneNumber"}} class="btn btn-default">Show Phone Number</button>
+<button {{action "toggleShowPhoneNumber"}} class="btn {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
+    {{if isShowingPhoneNumber 'Hide Phone Number' 'Show Phone Number'}}
+</button>

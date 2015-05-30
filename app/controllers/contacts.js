@@ -5,8 +5,8 @@ export default Ember.Controller.extend({
   isShowingPhoneNumber: false,
 
   actions: {
-    toggleShowPhoneNumber: function() {
-      this.toggleProperty('isShowingPhoneNumber')
+    toggleShowPhoneNumber() {
+      this.toggleProperty('isShowingPhoneNumber');
     }
   }
 

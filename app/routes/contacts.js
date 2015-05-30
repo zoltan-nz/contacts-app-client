@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
-  model: function() {
+  model() {
 
     return [
       {name: 'First Name', phone: '1234'},
