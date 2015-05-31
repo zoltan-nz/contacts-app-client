@@ -51,36 +51,32 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-### Implementation log
+## Implementation log
 
-* Turn on a couple of debug option in `config/environment.js`
+Turn on a couple of debug option in `config/environment.js`
 
-* [Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)
-  
-  
+[Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)
+
     npm install --save-dev ember-cli-sass
     mv app/styles/app.css app/styles/app.scss
 
-* [Ember-cli-bootstrap-sassy]()
-
+[Ember-cli-bootstrap-sassy]()
 
     ember install ember-cli-bootstrap-sassy
     cp bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss app/styles/boostrap-custom.scss
-    
-    Add the following two lines to app/styles/app.scss
+    #Add the following two lines to app/styles/app.scss
     @import "boostrap-custom";
     @import "bootstrap";
 
-* Add `main-nav` component. Note: a component name has to contain a dash.
+Add `main-nav` component. Note: a component name has to contain a dash.
 
-* Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo
+Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo
 
-* Generate `Contacts` resource: `ember g resource contacts`, add `link-to` to main-nav.hbs, add header to contacts.hbs
+Generate `Contacts` resource: `ember g resource contacts`, add `link-to` to main-nav.hbs, add header to contacts.hbs
 
-* Add a simple array to routes/contacts.js and show this list in template.
+Add a simple array to routes/contacts.js and show this list in template.
 
-* Add a simple show/hide button to template.
-
+Add a simple show/hide button to template.
 
     ember g controller contacts
     Add isShowingPhoneNumber property
@@ -88,4 +84,4 @@ Specify what it takes to deploy your app.
     Add button to template
     Add actions to controller
 
-* Binding class attributes and button label. Using ES6 function property syntax.
+Binding class attributes and button label. Using ES6 function property syntax.
