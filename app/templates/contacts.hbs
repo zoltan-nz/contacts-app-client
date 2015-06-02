@@ -15,3 +15,14 @@
 <button {{action "toggleShowPhoneNumber"}} class="btn {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
     {{if isShowingPhoneNumber 'Hide Phone Number' 'Show Phone Number'}}
 </button>
+
+<form action="">
+
+  {{input type="text" value=name size="100" placeholder="Name"}}
+  {{input type="text" value=phone size="20" placeholder="Phone"}}
+
+  <button {{action 'submit'}}>Add</button>
+
+
+</form>
+

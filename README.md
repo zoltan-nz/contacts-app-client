@@ -95,3 +95,8 @@ Add a simple show/hide button to template. | [PR](https://github.com/szines/cont
     Add actions to controller
 
 Binding class attributes and button label. Using ES6 function property syntax. | [PR](https://github.com/szines/contacts-app-client/commit/53686f18b89df1a6bac506fd0f01bcb7b7ef2b5f)
+
+Adding LocalForage Adapter. (ember-localforage-adapter)[https://github.com/genkgo/ember-localforage-adapter]
+
+    ember install ember-localforage-adapter
+    ember generate adapter application
