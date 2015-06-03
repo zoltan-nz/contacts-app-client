@@ -1,28 +1,36 @@
 <h1>Contacts</h1>
 
-<ul class="list-group">
-  {{#each model as |item|}}
-      <li class="list-group-item">{{item.name}}
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Phone
+        <button {{action "toggleShowPhoneNumber"}} class="btn btn-xs {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
+          {{if isShowingPhoneNumber 'Hide' 'Show'}}
+        </button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |item|}}
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{#if isShowingPhoneNumber}}{{item.phone}}{{/if}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
 
-        {{#if isShowingPhoneNumber}}
-          {{item.phone}}
-        {{/if}}
+<div class="row">
+  <div class="col-xs-3">
+    {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
+  </div>
 
-      </li>
-  {{/each}}
-</ul>
+  <div class="col-xs-3">
+    {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
+  </div>
 
-<button {{action "toggleShowPhoneNumber"}} class="btn {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
-    {{if isShowingPhoneNumber 'Hide Phone Number' 'Show Phone Number'}}
-</button>
-
-<form action="">
-
-  {{input type="text" value=name size="100" placeholder="Name"}}
-  {{input type="text" value=phone size="20" placeholder="Phone"}}
-
-  <button {{action 'submit'}}>Add</button>
-
-
-</form>
-
+  <button type="submit" class="btn btn-warning" {{action 'addNewContact'}}>Add New Contact</button>
+</div>
