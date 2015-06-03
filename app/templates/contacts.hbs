@@ -10,6 +10,7 @@
           {{if isShowingPhoneNumber 'Hide' 'Show'}}
         </button>
       </th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,9 @@
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
         <td>{{#if isShowingPhoneNumber}}{{item.phone}}{{/if}}</td>
+        <td>
+          <button class="btn btn-xs btn-danger" {{action "deleteContact" item}}>Delete</button>
+        </td>
       </tr>
     {{/each}}
   </tbody>

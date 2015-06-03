@@ -2,15 +2,25 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
+  name: '',
+  phone: '',
+
   isShowingPhoneNumber: false,
+
+  isNameEmpty: Ember.computed.empty('name'),
+  isPhoneEmpty: Ember.computed.empty('phone'),
 
   actions: {
 
     toggleShowPhoneNumber() {
+
       this.toggleProperty('isShowingPhoneNumber');
+
     },
 
     addNewContact() {
+
+      if (this.get('isNameEmpty') && this.get('isPhoneEmpty')) return;
 
       var nameFromInput = this.get('name');
       var phoneFromInput = this.get('phone');
@@ -24,8 +34,13 @@ export default Ember.Controller.extend({
 
       this.set('name', '');
       this.set('phone', '');
+
+    },
+
+    deleteContact(contact) {
+
+      this.store.deleteRecord(contact);
+
     }
-
   }
-
 });
