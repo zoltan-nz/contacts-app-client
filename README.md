@@ -51,6 +51,24 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+* [Companies using Ember](http://brewhouse.io/images/posts/2015/05/companies.png)
+
+## Usefull addons
+
+    ember-cli-coffeescript
+    ember-cli-sass
+    ember-cli-mocha
+    ember-cli-blanket (Code Coverage)
+    ember-cli-sauce
+    emberfire
+    ember-cli-simple-auth
+    liquid-fire
+    ember-cli-deploy
+
+* [Ember Addons](www.emberaddons.com)
+* [Ember Observer](www.emberobserver.com)
+    
+
 ## Implementation log
 
 Prerequisite: nodejs and npm.
