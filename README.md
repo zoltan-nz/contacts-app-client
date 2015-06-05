@@ -96,7 +96,7 @@ Turn on a couple of debug option in `config/environment.js`
     @import "boostrap-custom";
     @import "bootstrap";
 
-Add `main-nav` component (could be partial as well). Note: a component name has to contain a dash. | [PR] (https://github.com/szines/contacts-app-client/commit/101629f49533b764153ccfad09f272e2e93bcc53) | [Bootstrap example](http://getbootstrap.com/examples/navbar-static-top/)
+Add `main-nav` component (could be partial as well). Note: a component name has to contain a dash. | [PR](https://github.com/szines/contacts-app-client/commit/101629f49533b764153ccfad09f272e2e93bcc53) | [Bootstrap example](http://getbootstrap.com/examples/navbar-static-top/)
   
 Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo | [PR](https://github.com/szines/contacts-app-client/commit/7cdb33bdd1605df6ef646c69d68a4fcf71d081c3)
 
@@ -118,3 +118,7 @@ Adding LocalForage Adapter. (ember-localforage-adapter)[https://github.com/genkg
 
     ember install ember-localforage-adapter
     ember generate adapter application
+
+Add createRecord action to contacts controller | [PR](https://github.com/szines/contacts-app-client/commit/30a4f2f204b29a46d74410d1330b81f173e2c643)
+
+Add deleteRecord and add checking of empty input fields | [PR](https://github.com/szines/contacts-app-client/commit/278b09969554f63cf727b844ecc8a341150a0d5e)

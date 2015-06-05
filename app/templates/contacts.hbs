@@ -23,6 +23,8 @@
           <button class="btn btn-xs btn-danger" {{action "deleteContact" item}}>Delete</button>
         </td>
       </tr>
+    {{else}}
+      <tr><td colspan="4" class="text-center">Please add your first contact to the list</td></tr>
     {{/each}}
   </tbody>
 </table>
