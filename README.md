@@ -142,3 +142,10 @@ Add deleteRecord and add checking of empty input fields | [PR](https://github.co
 ### 9. Adding bulk data generator and updating Ember
 
 Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [PR](https://github.com/szines/contacts-app-client/commit/9633a42d609d96044a5c70b57a2e6c1318984ace)
+
+### 10. Heroku deployment
+
+More details: http://www.ember-cli.com/#deployments
+Buildpack link: https://github.com/tonycoco/heroku-buildpack-ember-cli
+
+
