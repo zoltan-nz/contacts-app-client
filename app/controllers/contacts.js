@@ -20,7 +20,9 @@ export default Ember.Controller.extend({
 
     addNewContact() {
 
-      if (this.get('isNameEmpty') && this.get('isPhoneEmpty')) { return; }
+      if (this.get('isNameEmpty') && this.get('isPhoneEmpty')) {
+        return;
+      }
 
       var nameFromInput = this.get('name');
       var phoneFromInput = this.get('phone');
@@ -38,10 +40,8 @@ export default Ember.Controller.extend({
     },
 
     deleteContact(item) {
-
-      this.store.deleteRecord(item);
-
-      item.save();
+      item.destroyRecord();
     }
   }
+
 });

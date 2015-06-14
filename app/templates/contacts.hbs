@@ -1,6 +1,9 @@
 <h1>Contacts</h1>
 
+<p>Size: {{model.length}}</p>
+
 <table class="table table-bordered table-hover">
+
   <thead>
     <tr>
       <th>ID</th>
@@ -14,7 +17,7 @@
     </tr>
   </thead>
   <tbody>
-    {{#each model as |item|}}
+    {{#each model key="id" as |item|}}
       <tr>
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
