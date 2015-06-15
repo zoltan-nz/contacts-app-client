@@ -73,23 +73,23 @@ Specify what it takes to deploy your app.
 
 Prerequisite: nodejs and npm.
   
-### 1. Ember CLI
+#### 1. Ember CLI
 
 Install ember cli and bower:
 
     npm install -g ember-cli bower
 
-### 2. New app
+#### 2. New app
 
 Create a new ember-app
 
     ember new contacts-app
 
-### 3. Debugging options
+#### 3. Debugging options
 
 Turn on a couple of debug option in `config/environment.js`
 
-### 4. Adding sass and bootstrap
+#### 4. Adding sass and bootstrap
 
 [Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) | [PR](https://github.com/szines/contacts-app-client/commit/9e04f9b71d76756907920ad0ad9df2878b5982a1)
 
@@ -104,15 +104,15 @@ Turn on a couple of debug option in `config/environment.js`
     @import "boostrap-custom";
     @import "bootstrap";
 
-### 5. Creating navigation component
+#### 5. Creating navigation component
 
 Add `main-nav` component (could be partial as well). Note: a component name has to contain a dash. | [PR](https://github.com/szines/contacts-app-client/commit/101629f49533b764153ccfad09f272e2e93bcc53) | [Bootstrap example](http://getbootstrap.com/examples/navbar-static-top/)
   
-### 6. Creating a static page and using link-to
+#### 6. Creating a static page and using link-to
 
 Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo | [PR](https://github.com/szines/contacts-app-client/commit/7cdb33bdd1605df6ef646c69d68a4fcf71d081c3)
 
-### 7. Generating the first resource (model)
+#### 7. Generating the first resource (model)
 
 Generate `Contacts` resource: `ember g resource contacts`, add `link-to` to main-nav.hbs, add header to contacts.hbs | [PR](https://github.com/szines/contacts-app-client/commit/6f0439e2c1d710910ab8401827079be0f3e21fca)
 
@@ -128,7 +128,7 @@ Add a simple show/hide button to template. | [PR](https://github.com/szines/cont
 
 Binding class attributes and button label. Using ES6 function property syntax. | [PR](https://github.com/szines/contacts-app-client/commit/53686f18b89df1a6bac506fd0f01bcb7b7ef2b5f)
 
-### 8. Ember Data and Usage of LocalForage Adapter
+#### 8. Ember Data and Usage of LocalForage Adapter
 
 Adding LocalForage Adapter. (ember-localforage-adapter)[https://github.com/genkgo/ember-localforage-adapter]
 
@@ -139,13 +139,22 @@ Add createRecord action to contacts controller | [PR](https://github.com/szines/
 
 Add deleteRecord and add checking of empty input fields | [PR](https://github.com/szines/contacts-app-client/commit/278b09969554f63cf727b844ecc8a341150a0d5e)
 
-### 9. Adding bulk data generator and updating Ember
+#### 9. Adding bulk data generator and updating Ember
 
 Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [PR](https://github.com/szines/contacts-app-client/commit/9633a42d609d96044a5c70b57a2e6c1318984ace)
 
-### 10. Heroku deployment
+#### 10. Heroku deployment
 
-More details: http://www.ember-cli.com/#deployments
-Buildpack link: https://github.com/tonycoco/heroku-buildpack-ember-cli
+* More details: http://www.ember-cli.com/#deployments
+* Buildpack link: https://github.com/tonycoco/heroku-buildpack-ember-cli
 
+#### 11. Firebase database service integration
+
+* Instruction on Firebase website. [Firebase with ember-cli](https://www.firebase.com/docs/web/libraries/ember/guide.html)
+
+
+    ember install emberfire
+
+    
+* Configure your firebase URL in `config/environment.js`.
 
