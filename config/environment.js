@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'contacts-app',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: process.env.FIREBASE_URL,
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
