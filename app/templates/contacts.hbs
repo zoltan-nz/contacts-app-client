@@ -4,42 +4,42 @@
 
 <table class="table table-bordered table-hover">
 
-  <thead>
+    <thead>
     <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Phone
-        <button {{action "toggleShowPhoneNumber"}} class="btn btn-xs {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
-          {{if isShowingPhoneNumber 'Hide' 'Show'}}
-        </button>
-      </th>
-      <th></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone
+            <button {{action "toggleShowPhoneNumber"}} class="btn btn-xs {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
+              {{if isShowingPhoneNumber 'Hide' 'Show'}}
+            </button>
+        </th>
+        <th></th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     {{#each model key="id" as |item|}}
-      <tr>
-        <td>{{item.id}}</td>
-        <td>{{item.name}}</td>
-        <td>{{#if isShowingPhoneNumber}}{{item.phone}}{{/if}}</td>
-        <td>
-          <button class="btn btn-xs btn-danger" {{action "deleteContact" item}}>Delete</button>
-        </td>
-      </tr>
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{#if isShowingPhoneNumber}}{{item.phone}}{{/if}}</td>
+            <td>
+                <button class="btn btn-xs btn-danger" {{action "deleteContact" item}}>Delete</button>
+            </td>
+        </tr>
     {{else}}
-      <tr><td colspan="4" class="text-center">Please add your first contact to the list</td></tr>
+        <tr><td colspan="4" class="text-center">Please add your first contact to the list</td></tr>
     {{/each}}
-  </tbody>
+    </tbody>
 </table>
 
 <div class="row">
-  <div class="col-xs-3">
-    {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
-  </div>
+    <div class="col-xs-3">
+      {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
+    </div>
 
-  <div class="col-xs-3">
-    {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
-  </div>
+    <div class="col-xs-3">
+      {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
+    </div>
 
-  <button type="submit" class="btn btn-warning" {{action 'addNewContact'}}>Add New Contact</button>
+    <button type="submit" class="btn btn-warning" {{action 'addNewContact'}} disabled={{nothingThere}}>Add New Contact</button>
 </div>
