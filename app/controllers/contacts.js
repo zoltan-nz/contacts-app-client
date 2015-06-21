@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
 
     addNewContact() {
 
-      if (this.get('isNameEmpty') && this.get('isPhoneEmpty')) {
+      if (this.get('nothingThere')) {
         return;
       }
 
