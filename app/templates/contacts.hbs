@@ -2,6 +2,20 @@
 
 <p>Size: {{model.length}}</p>
 
+<div class="container-fluid">
+    <div class="row well">
+        <div class="col-xs-3">
+          {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
+        </div>
+
+        <div class="col-xs-3">
+          {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
+        </div>
+
+        <button type="submit" class="btn btn-warning" {{action 'addNewContact'}} disabled={{nothingThere}}>Add New Contact</button>
+    </div>
+</div>
+
 <table class="table table-bordered table-hover">
 
     <thead>
@@ -31,15 +45,3 @@
     {{/each}}
     </tbody>
 </table>
-
-<div class="row">
-    <div class="col-xs-3">
-      {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
-    </div>
-
-    <div class="col-xs-3">
-      {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
-    </div>
-
-    <button type="submit" class="btn btn-warning" {{action 'addNewContact'}} disabled={{nothingThere}}>Add New Contact</button>
-</div>
