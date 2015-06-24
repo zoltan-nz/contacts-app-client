@@ -163,3 +163,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [PR]
 ### 12. Loading phase
 
 * Create a `loading.hbs` in template folder. It appears while Promise has been resolved: data downloading from server in the background.
+
+### 13. Add a query param
+
+* More details about query-params: [Guide](http://guides.emberjs.com/v1.12.0/routing/query-params/)
