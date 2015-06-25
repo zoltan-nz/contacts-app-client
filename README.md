@@ -159,3 +159,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [PR]
 * Configure your firebase URL in `config/environment.js`.
 
 * Note: Firebase works well with Ember Data version: 1.0.0-beta.19.2
+
+### 12. Loading phase
+
+* Create a `loading.hbs` in template folder. It appears while Promise has been resolved: data downloading from server in the background.
