@@ -162,8 +162,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 
 ### 12. Loading phase
 
-* Create a `loading.hbs` in template folder. It appears while Promise has been resolved: data downloading from server in the background.
-* [Commit](https://github.com/szines/contacts-app-client/commit/f9fe701bf1a21bc8fa7409e5702ca8b2df9b1cc2)
+* Create a `loading.hbs` in template folder. It appears while Promise has been resolved: data downloading from server in the background. | [Commit](https://github.com/szines/contacts-app-client/commit/f9fe701bf1a21bc8fa7409e5702ca8b2df9b1cc2)
 
 ### 13. Add a query param
 
