@@ -167,3 +167,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 ### 13. Add a query param
 
 * More details about query-params: [Guide](http://guides.emberjs.com/v1.12.0/routing/query-params/) | [Commit](https://github.com/szines/contacts-app-client/commit/666a8cccd53f72ba1edf3631699d3d3fa075c041)
+
+### 14. Playing with Computed Properties
+
+* Change `and` to `or` at validation.

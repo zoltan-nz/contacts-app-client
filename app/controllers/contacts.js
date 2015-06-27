@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
   isNameEmpty: Ember.computed.empty('name'),
   isPhoneEmpty: Ember.computed.empty('phone'),
 
-  nothingThere: Ember.computed.and('isNameEmpty', 'isPhoneEmpty'),
+  nothingThere: Ember.computed.or('isNameEmpty', 'isPhoneEmpty'),
 
   actions: {
 
