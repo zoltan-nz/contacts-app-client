@@ -14,6 +14,12 @@ export default Ember.Controller.extend({
 
   nothingThere: Ember.computed.or('isNameEmpty', 'isPhoneEmpty'),
 
+  contactsWithEmail: function() {
+    var model = this.get('model');
+    var filteredModel = model.filterBy('email');
+    return filteredModel.get('length');
+  }.property('model.@each'),
+
   actions: {
 
     toggleShowPhoneNumber() {
@@ -30,16 +36,19 @@ export default Ember.Controller.extend({
 
       var nameFromInput = this.get('name');
       var phoneFromInput = this.get('phone');
+      var emailFromInput = this.get('email');
 
       const newContact = this.store.createRecord('contact', {
         name: nameFromInput,
-        phone: phoneFromInput
+        phone: phoneFromInput,
+        email: emailFromInput
       });
 
       newContact.save();
 
       this.set('name', '');
       this.set('phone', '');
+      this.set('email', '');
 
     },
 

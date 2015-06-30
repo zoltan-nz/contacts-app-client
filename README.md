@@ -158,7 +158,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
     
 * Configure your firebase URL in `config/environment.js`.
 
-* Note: Firebase works well with Ember Data version: 1.0.0-beta.19.2
+* Note: Firebase works well with Ember Data version: 1.0.0-beta.18
 
 ### 12. Loading phase
 
@@ -171,3 +171,5 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 ### 14. Playing with Computed Properties
 
 * Change `and` to `or` at validation.
+* Add email attribute to contact model.
+* Add computed property for counting records with email addresses.
