@@ -1,0 +1,15 @@
+<div class="row well">
+  <div class="col-xs-3">
+    {{input type="text" value=name size="100" placeholder="Enter a new name" class="form-control"}}
+  </div>
+
+  <div class="col-xs-3">
+    {{input type="text" value=phone size="20" placeholder="Phone" class="form-control"}}
+  </div>
+
+  <div class="col-xs-3">
+    {{input type="text" value=email size="100" placeholder="Email" class="form-control"}}
+  </div>
+
+  <button type="submit" class="btn btn-warning" {{action 'buttonClicked'}} disabled={{nothingThere}}>Add New Contact</button>
+</div>

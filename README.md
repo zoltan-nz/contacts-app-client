@@ -173,3 +173,14 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Change `and` to `or` at validation.
 * Add email attribute to contact model.
 * Add computed property for counting records with email addresses.
+
+### 15. Clean up controller with components
+
+* [Official guide about Components](http://guides.emberjs.com/v1.12.0/components/)
+* Generate `contacts/add-contact-form` component with the following ember command: `ember g component contacts/add-contact-form`
+* Move all form related html code from `templates/contacts.hbs` in `templates/components/contacts/add-contact-form.hbs`
+* Insert in `templates/contacts.hbs` the one liner component code: `{{contacts/add-contact-form}}`
+* Move model modifier actions from controller to route.
+* Create action in component and send action with params to higher level route action.
+* Change computed properties for using the new preferred syntax.
+
