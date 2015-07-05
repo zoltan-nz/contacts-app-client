@@ -183,4 +183,9 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Move model modifier actions from controller to route.
 * Create action in component and send action with params to higher level route action.
 * Change computed properties for using the new preferred syntax.
+* (Connected commit)[https://github.com/szines/contacts-app-client/commit/0826f92f8de512521b40dd790e037c941ab2558c]
 
+### 16. Create a phone-input component
+
+* Create a phone-input component which extend from Ember.TextInput
+* Add an observer with regular expression which accept only numbers and insert dash after each third digit.
