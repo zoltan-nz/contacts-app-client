@@ -32,7 +32,11 @@
             </td>
         </tr>
     {{else}}
+      {{#if model.isUpdating}}
+        <tr><td colspan="5" class="text-center">Data is downloading...</td></tr>
+      {{else}}
         <tr><td colspan="5" class="text-center">Please add your first contact to the list</td></tr>
+      {{/if}}
     {{/each}}
     </tbody>
 </table>
