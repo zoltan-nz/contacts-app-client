@@ -189,3 +189,9 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 
 * Create a phone-input component which extend from Ember.TextInput
 * Add an observer with regular expression which accept only numbers and insert dash after each third digit.
+
+### 17. Update Ember Data fetching method
+
+* Using `.findAll('contact')` for downloading contacts.
+* Data downloading in the backtround, `model.isUpdating` is `true` until all data downloaded.
+* Update template with showing different message during data download. [PR](https://github.com/szines/contacts-app-client/commit/cc4955e8b5be3d90a5686d7dd2931233332b62b3)
