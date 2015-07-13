@@ -1,0 +1,23 @@
+
+
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+      {{#each model key="id" as |item|}}
+        {{contacts/contact-row item=item}}
+      {{else}}
+        {{#if model.isUpdating}}
+            <tr><td colspan="5" class="text-center">Data is downloading...</td></tr>
+        {{else}}
+            <tr><td colspan="5" class="text-center">Please add your first contact to the list</td></tr>
+        {{/if}}
+      {{/each}}
+    </tbody>
+

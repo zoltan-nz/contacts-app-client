@@ -5,38 +5,4 @@
 
 {{contacts/add-contact-form action='addNewContact'}}
 
-<table class="table table-bordered table-hover">
-
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Phone
-            <button {{action "toggleShowPhoneNumber"}} class="btn btn-xs {{if isShowingPhoneNumber 'btn-danger' 'btn-success'}}">
-              {{if isShowingPhoneNumber 'Hide' 'Show'}}
-            </button>
-        </th>
-        <th>Email</th>
-        <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    {{#each model key="id" as |item|}}
-        <tr>
-            <td>{{item.id}}</td>
-            <td>{{item.name}}</td>
-            <td>{{#if isShowingPhoneNumber}}{{item.phone}}{{/if}}</td>
-            <td>{{item.email}}</td>
-            <td>
-                <button class="btn btn-xs btn-danger" {{action "deleteContact" item}}>Delete</button>
-            </td>
-        </tr>
-    {{else}}
-      {{#if model.isUpdating}}
-        <tr><td colspan="5" class="text-center">Data is downloading...</td></tr>
-      {{else}}
-        <tr><td colspan="5" class="text-center">Please add your first contact to the list</td></tr>
-      {{/if}}
-    {{/each}}
-    </tbody>
-</table>
+{{contacts/contact-table model=model}}
