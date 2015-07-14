@@ -195,3 +195,8 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Using `.findAll('contact')` for downloading contacts.
 * Data downloading in the backtround, `model.isUpdating` is `true` until all data downloaded.
 * Update template with showing different message during data download. [PR](https://github.com/szines/contacts-app-client/commit/cc4955e8b5be3d90a5686d7dd2931233332b62b3)
+
+### 18. Move table and table rows in separated components
+
+* Remove showingPhoneNumber toggle.
+* Create `contact-table` and `contact-row` component and move html and logic there from main contacts template and controller. [PR](https://github.com/szines/contacts-app-client/commit/30d7626626f682e48a64c98577cc0c26d332b126)
