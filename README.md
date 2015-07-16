@@ -183,7 +183,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Move model modifier actions from controller to route.
 * Create action in component and send action with params to higher level route action.
 * Change computed properties for using the new preferred syntax.
-* (Connected commit)[https://github.com/szines/contacts-app-client/commit/0826f92f8de512521b40dd790e037c941ab2558c]
+* [Connected commit](https://github.com/szines/contacts-app-client/commit/0826f92f8de512521b40dd790e037c941ab2558c)
 
 ### 16. Create a phone-input component
 
@@ -194,9 +194,15 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 
 * Using `.findAll('contact')` for downloading contacts.
 * Data downloading in the backtround, `model.isUpdating` is `true` until all data downloaded.
-* Update template with showing different message during data download. [PR](https://github.com/szines/contacts-app-client/commit/cc4955e8b5be3d90a5686d7dd2931233332b62b3)
+* Update template with showing different message during data download. [Commit](https://github.com/szines/contacts-app-client/commit/cc4955e8b5be3d90a5686d7dd2931233332b62b3)
 
 ### 18. Move table and table rows in separated components
 
 * Remove showingPhoneNumber toggle.
-* Create `contact-table` and `contact-row` component and move html and logic there from main contacts template and controller. [PR](https://github.com/szines/contacts-app-client/commit/30d7626626f682e48a64c98577cc0c26d332b126)
+* Create `contact-table` and `contact-row` component and move html and logic there from main contacts template and controller. [Commit](https://github.com/szines/contacts-app-client/commit/30d7626626f682e48a64c98577cc0c26d332b126)
+
+### 19. Implement Boostrap modal window for Delete confirmation
+
+* Create `modal-dialog` component
+* Insert `modal-dialog` in `contact-row`
+* [Commit](https://github.com/szines/contacts-app-client/commit/485d30527c3e59229377704b01bfc41c7d1598cb)
