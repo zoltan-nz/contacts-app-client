@@ -4,8 +4,8 @@
 <td>{{item.email}}</td>
 <td>
     <button class="btn btn-xs btn-danger" {{action "deleteItem"}}>Delete</button>
-</td>
 
-{{#modal-dialog action="deleteConfirmed" title="Confirmation" primerButtonLabel="Delete"}}
-    <p>Are you really sure?</p>
-{{/modal-dialog}}
+    {{#modal-dialog action="deleteConfirmed" title="Confirmation" primerButtonLabel="Delete"}}
+        <p>Are you really sure?</p>
+    {{/modal-dialog}}
+</td>

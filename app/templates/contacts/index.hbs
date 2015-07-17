@@ -1,0 +1,8 @@
+<p>Database size: {{model.length}}</p>
+<p>Contacts with email: {{contactsWithEmail}}</p>
+
+<p class="pull-right">
+  {{link-to 'Add a new Contact' 'contacts.new' class='btn btn-success'}}
+</p>
+
+{{contacts/contact-table model=model}}

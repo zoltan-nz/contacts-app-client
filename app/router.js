@@ -7,7 +7,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('contacts');
+  this.route('contacts', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
