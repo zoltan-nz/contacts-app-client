@@ -206,3 +206,11 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Create `modal-dialog` component
 * Insert `modal-dialog` in `contact-row`
 * [Commit](https://github.com/szines/contacts-app-client/commit/485d30527c3e59229377704b01bfc41c7d1598cb)
+
+### 20. Move the form in a contacts/new page
+
+* Add a new nested route to `app/router.js`
+* Create a `contacts/new.hbs` and `contacts/new.js` controller.
+* Move index content to `contacts/index.hbs`.
+* Add {{outlet}} to `contacts.js`
+* [Commit](https://github.com/szines/contacts-app-client/commit/52fe4739353ca0d500cbf4b38b8b2411bee9d45f)
