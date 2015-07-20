@@ -1,0 +1,51 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name:</label>
+
+        <div class="col-sm-10">
+            {{#if isShowing}}
+              <div class="form-control form-text">{{model.name}}</div>
+            {{else}}
+              {{input id="name" type="text" value=model.name size="100" placeholder="Enter a new name" class="form-control"}}
+            {{/if}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Phone:</label>
+
+        <div class="col-sm-10">
+          {{#if isShowing}}
+              <div class="form-control form-text">{{model.phone}}</div>
+          {{else}}
+            {{phone-input type="text" value=model.phone size="20" placeholder="Phone ex. 234-221-332" class="form-control"}}
+          {{/if}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Email:</label>
+
+        <div class="col-sm-10">
+          {{#if isShowing}}
+              <div class="form-control form-text">
+                <p>{{model.email}}</p>
+              </div>
+          {{else}}
+            {{input type="text" value=model.email size="100" placeholder="Email" class="form-control"}}
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          {{#if isShowing}}
+            {{link-to 'Edit' 'contacts.edit' model.id class='btn btn-success'}}
+          {{else}}
+              <button type="submit" class="btn btn-warning" {{action 'buttonClicked'}} disabled={{isDisabled}}>
+                {{#if model.isSaving}}<span class="glyphicon glyphicon-refresh spinning"></span>{{/if}}
+                {{submitButtonLabel}}
+              </button>
+          {{/if}}
+        </div>
+    </div>
+
+</form>
