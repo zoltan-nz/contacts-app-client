@@ -1,4 +1,8 @@
-<td>{{item.id}}</td>
+<td>
+  {{#link-to 'contacts.show' item.id}}
+      {{item.id}}
+  {{/link-to}}
+</td>
 <td>{{item.name}}</td>
 <td>{{item.phone}}</td>
 <td>{{item.email}}</td>

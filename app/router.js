@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('contacts', function() {
     this.route('new');
+    this.route('show', { path: '/:id' });
   });
 });
 
