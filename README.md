@@ -214,3 +214,9 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Move index content to `contacts/index.hbs`.
 * Add {{outlet}} to `contacts.js`
 * [Commit](https://github.com/szines/contacts-app-client/commit/52fe4739353ca0d500cbf4b38b8b2411bee9d45f)
+
+### 21. Create a contacts/show route, template
+
+* Add a new nested route to `router.js`
+* Create component, template for `show` route.
+* [Commit](https://github.com/szines/contacts-app-client/commit/64286b835229e071c70faa9bd63638580226dfa9)
