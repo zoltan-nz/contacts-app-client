@@ -220,3 +220,12 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Add a new nested route to `router.js`
 * Create component, template for `show` route.
 * [Commit](https://github.com/szines/contacts-app-client/commit/64286b835229e071c70faa9bd63638580226dfa9)
+
+### 22. Refactor contact-form component and using in create, edit and show route
+
+* Create and edit route in `router.js`
+* Create the new universal component `app/components/contacts/contact-form.js`
+* Delete old components
+* Update route models and actions
+* Update css
+* [Commit](https://github.com/szines/contacts-app-client/commit/fde24d8b1819ad369fba83e43c11fa20cbdbd0d1)
