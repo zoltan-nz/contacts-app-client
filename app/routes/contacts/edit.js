@@ -10,7 +10,7 @@ export default Ember.Route.extend({
     updateContact(editedContact) {
       editedContact.save().then(() => {
         this.transitionTo('contacts.show', editedContact.id);
-      })
+      });
     }
   }
 

@@ -10,7 +10,7 @@ export default Ember.Route.extend({
     addNewContact(newContact) {
       newContact.save().then(() => {
         this.transitionTo('contacts.index');
-      })
+      });
     }
 }
 
