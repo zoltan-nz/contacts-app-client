@@ -229,3 +229,25 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 * Update route models and actions
 * Update css
 * [Commit](https://github.com/szines/contacts-app-client/commit/fde24d8b1819ad369fba83e43c11fa20cbdbd0d1)
+
+### 23. Update Firebase and add authentication
+
+Readings:
+ 
+* https://www.firebase.com/blog/2015-07-28-emberfire-1-13-0.html
+* http://vestorly.github.io/torii/
+* https://www.firebase.com/docs/web/libraries/ember/guide.html#section-authentication
+
+Steps:
+
+* Run in console: `ember install emberfire` - Update adapter, bower.json and package.json
+* Run in console: `ember install torii`
+* Add this to `config/environment.js`
+```
+    torii: {
+      sessionServiceName: 'session'
+    },
+```
+* Add `torii-adapters/application.js` for service injection.
+* Create actions in `application.js` and template in `application.hbs` 
+
