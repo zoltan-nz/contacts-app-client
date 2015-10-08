@@ -65,14 +65,14 @@ Specify what it takes to deploy your app.
     liquid-fire
     ember-cli-deploy
 
-* [Ember Addons](www.emberaddons.com)
-* [Ember Observer](www.emberobserver.com)
-    
+* [Ember Addons](http://www.emberaddons.com)
+* [Ember Observer](http://www.emberobserver.com)
+
 
 ## Implementation log
 
 Prerequisite: nodejs and npm.
-  
+
 #### 1. Ember CLI
 
 Install ember cli and bower:
@@ -107,7 +107,7 @@ Turn on a couple of debug option in `config/environment.js`
 #### 5. Creating navigation component
 
 Add `main-nav` component (could be partial as well). Note: a component name has to contain a dash. | [Commit](https://github.com/szines/contacts-app-client/commit/101629f49533b764153ccfad09f272e2e93bcc53) | [Bootstrap example](http://getbootstrap.com/examples/navbar-static-top/)
-  
+
 #### 6. Creating a static page and using link-to
 
 Add `About` page: router.js, main-nav.hbs with `link-to`, index.hbs, about.hbs, `link-to` on logo | [Commit](https://github.com/szines/contacts-app-client/commit/7cdb33bdd1605df6ef646c69d68a4fcf71d081c3)
@@ -155,7 +155,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 
     ember install emberfire
 
-    
+
 * Configure your firebase URL in `config/environment.js`.
 
 * Note: Firebase works well with Ember Data version: 1.0.0-beta.18
@@ -233,7 +233,7 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 ### 23. Update Firebase and add authentication
 
 Readings:
- 
+
 * https://www.firebase.com/blog/2015-07-28-emberfire-1-13-0.html
 * http://vestorly.github.io/torii/
 * https://www.firebase.com/docs/web/libraries/ember/guide.html#section-authentication
@@ -249,5 +249,5 @@ Steps:
     },
 ```
 * Add `torii-adapters/application.js` for service injection.
-* Create actions in `application.js` and template in `application.hbs` 
+* Create actions in `application.js` and template in `application.hbs`
 
