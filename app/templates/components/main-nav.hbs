@@ -14,9 +14,13 @@
               {{#link-to 'index' tagName="li"}}<a href>Home</a>{{/link-to}}
               {{#link-to 'contacts' tagName="li"}}<a href>Contacts</a>{{/link-to}}
             </ul>
+              {{#if session.isAuthenticated}}
+                <button {{action "signOut"}} class='navbar-right btn btn-default navbar-btn'>Sign out</button>
+              {{/if}}
             <ul class="nav navbar-nav navbar-right">
               {{#link-to 'about' tagName="li"}}<a href>About</a>{{/link-to}}
             </ul>
+
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
 </nav>

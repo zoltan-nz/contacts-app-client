@@ -1,20 +1,22 @@
 <div class="container">
 
-  {{main-nav}}
+  {{main-nav session=session signOut='signOut'}}
 
     {{#if session.isAuthenticated}}
-            Logged in as {{session.currentUser.displayName}}
-            <button {{action "signOut"}}>Sign out</button>
       {{outlet}}
     {{else}}
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
-                <form class="form-signin">
-                    <h2 class="form-signin-heading">Please sign in</h2>
-                    <label for="inputEmail" class="sr-only">Email address</label>
-                  {{input value=email type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""}}
-                    <label for="inputPassword" class="sr-only">Password</label>
-                  {{input value=password type="password" id="inputPassword" class="form-control" placeholder="Password" required=""}}
+            <h2 class="form-signin-heading">Please sign in</h2>
+                <form>
+                    <div class="form-group">
+                      <label>Email address</label>
+                      {{input value=email type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""}}
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      {{input value=password type="password" id="inputPassword" class="form-control" placeholder="Password" required=""}}
+                    </div>
                     <button class="btn btn-lg btn-primary btn-block" {{action "signIn" email password}}>Sign in</button>
                 </form>
             </div>

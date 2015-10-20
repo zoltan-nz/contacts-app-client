@@ -4,7 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'contacts-app',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+        'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com"
+    },
     firebase: 'https://contactsappdata.firebaseio.com/',
     torii: {
       sessionServiceName: 'session'
