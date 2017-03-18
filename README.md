@@ -1,7 +1,7 @@
 # Contacts App - Ember.js Tutorial
 
 * Live demo: https://contactsappdata.firebaseapp.com/
-* Login: admin@example.com, password: admin
+* Login: admin@example.com, password: admin1
 
 ## Implementation log
 
@@ -25,12 +25,8 @@ Turn on a couple of debug option in `config/environment.js`
 
 #### 4. Adding sass and bootstrap
 
-[Ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) | [Commit](https://github.com/szines/contacts-app-client/commit/9e04f9b71d76756907920ad0ad9df2878b5982a1)
-
-    npm install --save-dev ember-cli-sass
+    ember install ember-cli-sass
     mv app/styles/app.css app/styles/app.scss
-
-[Ember-cli-bootstrap-sassy](https://github.com/lifegadget/ember-cli-bootstrap-sassy) | [Commit](https://github.com/szines/contacts-app-client/commit/487da30d9a32134e8078ea7a41ae233d59f96b57)
 
     ember install ember-cli-bootstrap-sassy
     cp bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss app/styles/boostrap-custom.scss
@@ -91,8 +87,6 @@ Adding two buttons (bulk data generator and Delete All). Update Ember.js. | [Com
 
 
 * Configure your firebase URL in `config/environment.js`.
-
-* Note: Firebase works well with Ember Data version: 1.0.0-beta.18
 
 ### 12. Loading phase
 
@@ -184,70 +178,3 @@ Steps:
 ```
 * Add `torii-adapters/application.js` for service injection.
 * Create actions in `application.js` and template in `application.hbs`
-
-# Original Readme
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-* [Companies using Ember](http://brewhouse.io/images/posts/2015/05/companies.png)
-
-## Usefull addons
-
-    ember-cli-coffeescript
-    ember-cli-sass
-    ember-cli-mocha
-    ember-cli-blanket (Code Coverage)
-    ember-cli-sauce
-    emberfire
-    ember-cli-simple-auth
-    liquid-fire
-    ember-cli-deploy
-
-* [Ember Addons](http://www.emberaddons.com)
-* [Ember Observer](http://www.emberobserver.com)

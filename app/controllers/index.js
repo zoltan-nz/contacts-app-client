@@ -5,18 +5,14 @@ export default Ember.Controller.extend({
   actions: {
 
     generateDummyList() {
-      for (var i = 1; i <= 1000; i++) {
-        var newContact = this.store.createRecord('contact', {name: `Dummy Name ${i}` , phone: `${i}-1234-${i}`});
+      for (let i = 1; i <= 5; i++) {
+        const newContact = this.store.createRecord('contact', {name: `Dummy Name ${i}` , phone: `${i}-1234-${i}`});
         newContact.save();
       }
     },
 
     deleteAll() {
-      this.get('model').forEach((item) => {
-          item.destroyRecord();
-        }
-      );
+      this.get('model').forEach(item => item.destroyRecord());
     }
-
   }
 });

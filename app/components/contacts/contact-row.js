@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     },
 
     deleteConfirmed() {
-      var item = this.get('item');
+      const item = this.get('item');
       item.destroyRecord();
     }
   }

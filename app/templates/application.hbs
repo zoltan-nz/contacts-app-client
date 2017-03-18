@@ -11,11 +11,11 @@
                 <form>
                     <div class="form-group">
                       <label>Email address</label>
-                      {{input value=email type="email" id="inputEmail" class="form-control" placeholder="Email address (try: admin@example.com)" required="" autofocus=""}}
+                      {{input value=email type="email" id="inputEmail" class="form-control" placeholder="Email address (try: admin@example.com)" required=true autofocus=true}}
                     </div>
                     <div class="form-group">
                       <label>Password</label>
-                      {{input value=password type="password" id="inputPassword" class="form-control" placeholder="Password (try: admin)" required=""}}
+                      {{input value=password type="password" id="inputPassword" class="form-control" placeholder="Password (try: admin1)" required=true}}
                     </div>
                     <button class="btn btn-lg btn-primary btn-block" {{action "signIn" email password}}>Sign in</button>
                 </form>
